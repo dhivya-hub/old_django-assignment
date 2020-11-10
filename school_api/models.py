@@ -4,6 +4,12 @@ from django.contrib.auth.models import User
 #superuser username - admin
 #password - plmoknij
 
+#student username - Student_1
+#password - plmoknij
+
+#student username - Student_2
+#password - plmoknij
+
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     is_student = models.BooleanField(default=True)
